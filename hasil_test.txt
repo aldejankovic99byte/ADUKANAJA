@@ -1,0 +1,262 @@
+﻿
+   PASS  Tests\Feature\AdukanajaTest
+  Γ£ô halaman login tampil dan guest dialihkan                                                                     3.92s  
+  Γ£ô login dengan email dan nis diarahkan sesuai role                                                             0.26s  
+  Γ£ô login gagal dengan password salah                                                                            0.39s  
+  Γ£ô role dibatasi middleware                                                                                     0.27s  
+  Γ£ô siswa mengajukan pengaduan dengan foto                                                                       1.78s  
+  Γ£ô validasi pengaduan                                                                                           0.09s  
+  Γ£ô siswa hanya melihat pengaduan miliknya                                                                       1.61s  
+  Γ£ô admin verifikasi mengubah status dan menyimpan tanggapan                                                     1.16s  
+  Γ£ô penolakan wajib menyertakan alasan                                                                           0.03s  
+  Γ£ô crud pengguna sarana kategori                                                                                0.82s  
+  Γ£ô tidak bisa hapus diri sendiri dan kategori terpakai                                                          0.03s  
+  Γ£ô dashboard dan laporan beserta export                                                                         1.30s  
+  Γ£ô profil dan ubah password                                                                                     0.05s  
+  Γ£ô halaman form tambah dan edit tampil                                                                          0.57s  
+  Γ£ô foto profil upload ganti dan hapus                                                                           0.06s  
+  Γ£ô foto profil menolak file tidak valid                                                                         0.04s  
+  Γ£ô dashboard memuat data grafik dan hapus pengguna menghapus foto                                               0.06s  
+  Γ£ô sesi kedaluwarsa 419 dialihkan ramah                                                                         0.03s  
+
+   PASS  Tests\Feature\IntegritasDatabaseTest
+  Γ£ô constraint unique                                                                                            0.28s  
+  Γ£ô nilai default kolom workflow pada baris baru                                                                 0.02s  
+  Γ£ô hapus pengaduan menghapus seluruh data turunannya                                                            0.09s  
+  Γ£ô hapus siswa menghapus pengaduan dan turunannya                                                               0.05s  
+  Γ£ô hapus teknisi mengosongkan referensi tetapi riwayat tetap ada                                                0.05s  
+  Γ£ô hapus admin tidak menghapus pengaduan hanya mengosongkan pemverifikasi                                       0.03s  
+  Γ£ô kategori yang dipakai tidak bisa dihapus dan sarana menjadi null                                             0.02s  
+  Γ£ô foreign key menolak referensi yang tidak ada                                                                 0.02s  
+  Γ£ô transisi gagal tidak meninggalkan jejak di database                                                          0.09s  
+  Γ£ô bukti di atas batas tidak meninggalkan file yatim                                                            0.19s  
+  Γ£ô migrasi fase3 mengisi riwayat dari data lama tanpa kehilangan data                                           0.05s  
+
+   PASS  Tests\Feature\KeamananTest
+  Γ£ô input pengguna di escape pada semua halaman                                                                  1.10s  
+  Γ£ô semua form post memiliki token csrf                                                                          0.60s  
+  Γ£ô password disimpan dalam bentuk hash                                                                          0.02s  
+  Γ£ô logout mengakhiri sesi                                                                                       0.04s  
+  Γ£ô login dibatasi setelah terlalu banyak percobaan                                                              2.23s  
+  Γ£ô pesan login gagal tidak membocorkan apakah akun ada                                                          0.52s  
+  Γ£ô file php ditolak di semua titik unggah                                                                       0.04s  
+  Γ£ô nama file unggahan diacak dan tidak memakai nama asli                                                        0.03s  
+  Γ£ô file sensitif tidak masuk repository dan tidak publik                                                        0.07s  
+
+   PASS  Tests\Feature\KomentarTest
+  Γ£ô pihak yang terlibat boleh berkomentar dan diarahkan ke halamannya                                            0.07s  
+  Γ£ô pihak lain tidak boleh berkomentar                                                                           0.04s  
+  Γ£ô teknisi yang belum ditugaskan tidak boleh berkomentar                                                        0.04s  
+  Γ£ô validasi komentar                                                                                            0.04s  
+  Γ£ô komentar memberi tahu pihak lain bukan penulisnya                                                            0.03s  
+  Γ£ô komentar tampil di halaman ketiga role dengan escape                                                         0.06s  
+  Γ£ô komentar dari pengguna yang dihapus tetap tampil                                                             0.04s  
+  Γ£ô pembatasan laju komentar                                                                                     0.13s  
+  Γ£ô komentar dihapus bersama pengaduan                                                                           0.03s  
+
+   PASS  Tests\Feature\NotifikasiTest
+  Γ£ô pengajuan memberi tahu admin bukan pelapor                                                                   0.03s  
+  Γ£ô verifikasi memberi tahu siswa dan tidak menggandakan                                                         0.04s  
+  Γ£ô seluruh alur menghasilkan notifikasi untuk penerima yang tepat                                               0.10s  
+  Γ£ô notifikasi ikut hilang bila transaksi gagal                                                                  0.03s  
+  Γ£ô lonceng menampilkan jumlah belum dibaca dan isi terbaru                                                      0.05s  
+  Γ£ô buka notifikasi menandai dibaca dan mengarahkan                                                              0.04s  
+  Γ£ô notifikasi milik orang lain tidak dapat dibuka                                                               0.13s  
+  Γ£ô tautan eksternal tidak diikuti                                                                               0.03s  
+  Γ£ô tandai semua dibaca hanya untuk milik sendiri                                                                0.03s  
+  Γ£ô halaman notifikasi daftar pagination dan escape                                                              0.17s  
+  Γ£ô halaman notifikasi kosong                                                                                    0.03s  
+  Γ£ô notifikasi dihapus bersama pengaduan                                                                         0.02s  
+
+   PASS  Tests\Feature\OtorisasiRouteTest
+  Γ£ô pemindaian route menemukan route yang diharapkan                                                             0.07s  
+  Γ£ô prefix admin teknisi dan siswa selalu dilindungi role yang tepat                                             0.03s  
+  Γ£ô guest diarahkan ke login di semua route terlindungi                                                          0.09s  
+  Γ£ô role yang salah selalu mendapat 403                                                                          0.21s  
+  Γ£ô halaman get untuk role yang benar tidak menyebabkan error server                                             0.22s  
+
+   FAIL  Tests\Feature\ProduksiTest
+  Γ£ô header keamanan dikirim pada semua respons                                                                   0.08s  
+  Γ¿» hsts hanya dikirim lewat https                                                                               0.84s  
+  Γ£ô font inter dihosting lokal tanpa google fonts                                                                0.04s  
+  Γ£ô acak password demo hanya mengubah akun berpassword demo                                                      0.21s  
+  Γ£ô cek keamanan melaporkan password demo dan gagal pada kondisi kritis                                          0.04s  
+  Γ£ô ganti password                                                                                               0.04s  
+  Γ£ô buat admin                                                                                                   0.02s  
+  Γ£ô contoh env produksi aman                                                                                     0.03s  
+  Γ£ô dokumentasi penilaian tersedia                                                                               0.03s  
+
+   PASS  Tests\Feature\RegresiFiturLamaTest
+  Γ£ô laporan filter status                                                                                        0.06s  
+  Γ£ô laporan filter rentang tanggal                                                                               0.05s  
+  Γ£ô laporan ringkasan menghitung per status                                                                      0.03s  
+  Γ£ô export excel menghasilkan xlsx valid sesuai filter                                                           0.04s  
+  Γ£ô halaman cetak laporan                                                                                        0.03s  
+  Γ£ô pagination riwayat siswa                                                                                     0.04s  
+  Γ£ô riwayat siswa filter status                                                                                  0.04s  
+  Γ£ô pencarian pengguna dan pagination                                                                            0.07s  
+  Γ£ô crud sarana dan efek hapus pada pengaduan                                                                    0.04s  
+
+   PASS  Tests\Feature\StrukturProjectTest
+  Γ£ô nama file php di app sama dengan nama class                                                                  0.04s  
+  Γ£ô tidak ada class yang dideklarasikan dua kali                                                                 0.05s  
+  Γ£ô nama file view huruf kecil tanpa spasi                                                                       0.03s  
+  Γ£ô semua view yang dipanggil controller ada                                                                     0.03s  
+  Γ£ô semua route yang dipakai di view terdaftar                                                                   0.03s  
+  Γ£ô semua komponen blade yang dipakai ada                                                                        0.03s  
+  Γ£ô view pagination kustom terdaftar                                                                             0.02s  
+
+   PASS  Tests\Feature\TampilanTest
+  Γ£ô shell sidebar dan drawer tampil untuk setiap role                                                            0.05s  
+  Γ£ô menu menandai halaman aktif                                                                                  0.03s  
+  Γ£ô flash message tampil sebagai toast                                                                           0.03s  
+  Γ£ô kartu statistik memiliki ikon di semua dashboard                                                             0.05s  
+  Γ£ô dashboard admin menghitung ringkasan penanganan                                                              0.04s  
+  Γ£ô halaman login memakai tampilan baru                                                                          0.02s  
+  Γ£ô stylesheet memuat design system dan breakpoint                                                               0.02s  
+  Γ£ô komponen tampilan baru ada                                                                                   0.02s  
+  Γ£ô halaman login memuat identitas visual dan form yang sama                                                     0.02s  
+  Γ£ô login gagal menampilkan error pada tampilan baru                                                             0.23s  
+  Γ£ô aset halaman login tersedia dan valid                                                                        0.04s  
+  Γ£ô favicon memakai logo di layout utama                                                                         0.03s  
+  Γ£ô stylesheet tidak lagi memakai biru terang lama                                                               0.02s  
+  Γ£ô dashboard setiap role memakai banner hero                                                                    0.05s  
+  Γ£ô logo putih untuk sidebar tersedia dan dipakai                                                                0.03s  
+
+   PASS  Tests\Feature\TeknisiTest
+  Γ£ô login teknisi diarahkan ke dashboard teknisi                                                                 0.04s  
+  Γ£ô guest tidak bisa membuka halaman teknisi                                                                     0.02s  
+  Γ£ô matriks akses ketiga role                                                                                    0.17s  
+  Γ£ô teknisi tidak bisa melakukan aksi admin dan siswa                                                            0.04s  
+  Γ£ô menu teknisi tidak memuat tautan admin                                                                       0.03s  
+  Γ£ô role tidak dikenal dikeluarkan tanpa redirect loop                                                           0.02s  
+  Γ£ô teknisi hanya melihat tugas miliknya                                                                         0.07s  
+  Γ£ô dashboard teknisi menghitung hanya tugas sendiri                                                             0.04s  
+  Γ£ô riwayat hanya memuat pekerjaan selesai milik sendiri                                                         0.04s  
+  Γ£ô filter dan pencarian daftar tugas                                                                            0.05s  
+  Γ£ô siswa tetap hanya melihat pengaduan sendiri setelah ada role teknisi                                         0.04s  
+  Γ£ô admin membuat akun teknisi tanpa nis lalu teknisi bisa login                                                 0.03s  
+  Γ£ô role tidak valid ditolak dan nis tetap wajib untuk siswa                                                     0.03s  
+  Γ£ô filter role di daftar pengguna                                                                               0.04s  
+  Γ£ô admin dapat mengedit akun sendiri tanpa mengubah role                                                        0.03s  
+  Γ£ô teknisi dengan tugas tidak bisa dihapus atau diganti role                                                    0.03s  
+  Γ£ô teknisi tanpa tugas dapat dihapus                                                                            0.02s  
+  Γ£ô halaman profil teknisi tidak menampilkan kelas nis                                                           0.03s  
+  Γ£ô admin menugaskan teknisi ke pengaduan yang disetujui                                                         0.07s  
+  Γ£ô penugasan menolak user non teknisi dan pengaduan belum disetujui                                             0.03s  
+  Γ£ô penugasan ulang hanya sebelum teknisi bekerja                                                                0.04s  
+  Γ£ô pengaduan yang sudah ditugaskan tidak bisa ditolak atau dikembalikan ke pending                              0.03s  
+  Γ£ô kolom penugasan tidak bisa diisi lewat mass assignment                                                       0.03s  
+
+   FAIL  Tests\Feature\TolakDanHapusBuktiTest
+  Γ¿» teknisi menolak tugas lewat http                                                                             0.24s  
+  Γ£ô setelah ditolak admin dapat menugaskan ulang ke teknisi lain                                                 0.05s  
+  Γ£ô alasan penolakan wajib dan dibatasi                                                                          0.04s  
+  Γ£ô tugas tidak bisa ditolak setelah diterima atau oleh orang lain                                               0.06s  
+  Γ£ô tombol tolak hanya tampil saat status ditugaskan                                                             0.04s  
+  Γ¿» teknisi menghapus foto bukti dan file fisik ikut terhapus                                                    0.06s  
+  Γ£ô hapus bukti hanya untuk tugas milik sendiri dan bukti yang sesuai                                            0.07s  
+  Γ£ô bukti tidak bisa dihapus setelah diajukan selesai                                                            0.07s  
+  Γ£ô setelah bukti sesudah dihapus pengajuan penyelesaian ditolak                                                 0.05s  
+  Γ£ô bukti milik admin atau pengaduan lain menolak di lapisan service                                             0.04s  
+
+   PASS  Tests\Feature\ValidasiFormTest
+  Γ£ô pengaduan valid tersimpan dengan status awal yang benar                                                      0.05s  
+  Γ£ô pengaduan tidak valid ditolak per field                                                                      0.15s  
+  Γ£ô validasi kategori                                                                                            0.04s  
+  Γ£ô validasi sarana                                                                                              0.03s  
+  Γ£ô validasi pengguna                                                                                            0.13s  
+  Γ£ô validasi profil dan password                                                                                 0.04s  
+  Γ£ô validasi login                                                                                               0.02s  
+
+   PASS  Tests\Feature\WorkflowPenangananTest
+  Γ£ô alur lengkap dari pengajuan sampai validasi admin                                                            0.14s  
+  Γ£ô alur revisi lalu validasi                                                                                    0.13s  
+  Γ£ô matriks transisi penanganan                                                                                  0.03s  
+  Γ£ô transisi tidak valid ditolak oleh service dan status tidak berubah                                           0.03s  
+  Γ£ô assigned tidak bisa mulai atau diajukan sebelum diterima                                                     0.03s  
+  Γ£ô accepted tidak bisa diajukan atau diubah progresnya                                                          0.03s  
+  Γ£ô in progress tidak bisa divalidasi atau diterima ulang                                                        0.03s  
+  Γ£ô ajukan tanpa bukti sesudah ditolak walau ada bukti sebelum                                                   0.04s  
+  Γ£ô waiting confirmation hanya bisa ke completed atau revision                                                   0.05s  
+  Γ£ô completed adalah status akhir                                                                                0.06s  
+  Γ£ô pengaduan belum disetujui tidak bisa ditugaskan atau ditangani                                               0.03s  
+  Γ£ô status verifikasi dan penanganan terpisah serta alias tersedia                                               0.04s  
+  Γ£ô verifikasi dicatat di riwayat dan status sama tidak menggandakan                                             0.03s  
+  Γ£ô teknisi lain tidak dapat mengakses atau mengubah tugas                                                       0.06s  
+  Γ£ô role lain tidak bisa memakai aksi teknisi maupun validasi admin                                              0.07s  
+  Γ£ô service menolak pelaku dengan role salah                                                                     0.03s  
+  Γ£ô penugasan hanya untuk user teknisi                                                                           0.03s  
+  Γ£ô input status dari request tidak mempengaruhi status                                                          0.03s  
+  Γ£ô aturan progres                                                                                               0.04s  
+  Γ£ô progres hanya saat in progress                                                                               0.03s  
+  Γ£ô validasi upload bukti                                                                                        0.05s  
+  Γ£ô bukti hanya bisa diunggah saat accepted atau in progress                                                     0.04s  
+  Γ£ô batas jumlah bukti                                                                                           0.10s  
+  Γ£ô penugasan ulang mencatat riwayat penugasan                                                                   0.05s  
+  Γ£ô riwayat mencatat pelaku dan status asal                                                                      0.03s  
+  Γ£ô dashboard admin menawarkan validasi dan filter menunggu validasi                                             0.07s  
+  Γ£ô halaman tugas teknisi menampilkan aksi sesuai status                                                         0.10s  
+  Γ£ô siswa hanya melihat catatan verifikasi bukan catatan internal teknisi                                        0.05s  
+  Γ£ô skema workflow tersedia                                                                                      0.03s  
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   FAILED  Tests\Feature\ProduksiTest > hsts hanya dikirim lewat https                                                  
+  Header [Strict-Transport-Security] not present on response.
+Failed asserting that false is true.
+
+  at tests\Feature\ProduksiTest.php:42
+     38Γûò 
+     39Γûò     public function test_hsts_hanya_dikirim_lewat_https(): void
+     40Γûò     {
+     41Γûò         $this->get('/login')->assertHeaderMissing('Strict-Transport-Security');
+  Γ₧£  42Γûò         $this->withServerVariables(['HTTPS' => 'on'])->get('/login')->assertHeader('Strict-Transport-Security');
+     43Γûò     }
+     44Γûò 
+     45Γûò     // ------------------------------------------------------------------ font lokal
+     46Γûò
+
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   FAILED  Tests\Feature\TolakDanHapusBuktiTest > teknisi menolak tugas lewat http                                      
+  Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'assigned'
++'not_assigned'
+
+  at tests\Feature\TolakDanHapusBuktiTest.php:87
+     83Γûò         $this->assertNotNull($lama->dilepas_pada);
+     84Γûò 
+     85Γûò         // riwayat memuat alasan & pelaku
+     86Γûò         $r = $p->riwayat()->where('jenis', 'penanganan')->latest('id')->first();
+  Γ₧£  87Γûò         $this->assertSame('assigned', $r->dari);
+     88Γûò         $this->assertSame('not_assigned', $r->ke);
+     89Γûò         $this->assertSame($this->teknisi->id, $r->user_id);
+     90Γûò         $this->assertStringContainsString('Sedang cuti sampai minggu depan', $r->catatan);
+     91Γûò
+
+  1   tests\Feature\TolakDanHapusBuktiTest.php:87
+
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   FAILED  Tests\Feature\TolakDanHapusBuktiTest > teknisi menghapus foto bukti dan file fisik ikut terhapus             
+  Expected: Foto bukti sebelum perbaikan
+
+  To contain: dihapus
+
+  at tests\Feature\TolakDanHapusBuktiTest.php:186
+    182Γûò 
+    183Γûò         $this->assertModelMissing($bukti);
+    184Γûò         Storage::disk('public')->assertMissing($bukti->foto);
+    185Γûò         $r = $p->riwayat()->where('jenis', 'bukti')->latest('id')->first();
+  Γ₧£ 186Γûò         $this->assertStringContainsString('dihapus', $r->catatan);
+    187Γûò     }
+    188Γûò 
+    189Γûò     public function test_hapus_bukti_hanya_untuk_tugas_milik_sendiri_dan_bukti_yang_sesuai(): void
+    190Γûò     {
+
+  1   tests\Feature\TolakDanHapusBuktiTest.php:186
+
+
+  Tests:    3 failed, 170 passed (1659 assertions)
+  Duration: 30.89s
+

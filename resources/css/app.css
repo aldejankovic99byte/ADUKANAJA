@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+/* ========================================================
+   MIKRO UPDATE CSS - Tambahkan ke public/css/app.css
+   ======================================================== */
+
+/* 1. Mobile Responsiveness untuk Tabel */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+/* 2. Sentuhan Modern (Shadow & Radius) */
+.shadow-modern {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+.rounded-modern {
+    border-radius: 8px !important;
+}
+
+/* 3. Efek Interaksi pada Tombol (UX) */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Penyesuaian agar badge lebih estetik */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}

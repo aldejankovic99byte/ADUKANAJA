@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 200" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="n" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0A2463"/><stop offset=".55" stop-color="#0B2A6B"/><stop offset="1" stop-color="#1D4FA8"/></linearGradient>
+    <linearGradient id="l" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#DCE7FA" stop-opacity="0"/><stop offset="1" stop-color="#9DB9EC"/></linearGradient>
+  </defs>
+  <!-- pita biru muda yang naik di sisi kanan -->
+  <path d="M900 74 C1150 20 1420 60 1600 -40 L1600 30 C1420 100 1160 70 900 112 Z" fill="url(#l)" opacity=".85"/>
+  <!-- gelombang navy -->
+  <path d="M0 78 C220 28 470 112 760 84 C1040 56 1320 8 1600 -34 L1600 200 L0 200 Z" fill="url(#n)"/>
+  <path d="M0 98 C240 52 500 130 780 106 C1060 82 1330 40 1600 2 L1600 200 L0 200 Z" fill="#06194A" opacity=".35"/>
+</svg>

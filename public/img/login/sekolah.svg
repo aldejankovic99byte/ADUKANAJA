@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="kabut" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF3FC" stop-opacity="1"/><stop offset=".55" stop-color="#EEF3FC" stop-opacity=".25"/><stop offset="1" stop-color="#EEF3FC" stop-opacity="0"/></linearGradient>
+  </defs>
+  <!-- gedung kiri (3 lantai) -->
+  <g>
+    <rect x="-20" y="470" width="660" height="440" fill="#B9CCEC"/>
+    <rect x="-20" y="440" width="700" height="34" fill="#A7BEE6"/>
+    <rect x="-20" y="470" width="660" height="10" fill="#A7BEE6"/>
+    <rect x="-20" y="650" width="680" height="10" fill="#A7BEE6"/>
+    <rect x="-20" y="560" width="660" height="6" fill="#A7BEE6"/>
+    <rect x="20" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="84" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="148" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="212" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="276" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="340" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="404" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="468" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="532" y="500" width="48" height="46" fill="#E7EEFB"/><rect x="596" y="500" width="48" height="46" fill="#E7EEFB"/>
+    <rect x="20" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="84" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="148" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="212" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="276" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="340" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="404" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="468" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="532" y="590" width="48" height="46" fill="#E7EEFB"/><rect x="596" y="590" width="48" height="46" fill="#E7EEFB"/>
+    <rect x="20" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="84" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="148" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="212" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="276" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="340" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="404" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="468" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="532" y="690" width="48" height="46" fill="#E7EEFB"/><rect x="596" y="690" width="48" height="46" fill="#E7EEFB"/>
+    <rect x="260" y="790" width="120" height="120" fill="#A7BEE6"/>
+    <rect x="270" y="800" width="46" height="110" fill="#E7EEFB"/><rect x="324" y="800" width="46" height="110" fill="#E7EEFB"/>
+    <rect x="610" y="470" width="90" height="440" fill="#A7BEE6"/>
+    <rect x="626" y="500" width="56" height="46" fill="#E7EEFB"/><rect x="626" y="592" width="56" height="46" fill="#E7EEFB"/><rect x="626" y="684" width="56" height="46" fill="#E7EEFB"/>
+  </g>
+  <!-- gedung kanan (bertingkat, kaca) -->
+  <g>
+    <rect x="1000" y="360" width="640" height="560" fill="#B9CCEC"/>
+    <rect x="980" y="338" width="680" height="30" fill="#A7BEE6"/>
+    <rect x="1000" y="468" width="640" height="8" fill="#A7BEE6"/>
+    <rect x="1000" y="610" width="640" height="8" fill="#A7BEE6"/>
+    <rect x="1030" y="386" width="52" height="64" fill="#E7EEFB"/><rect x="1094" y="386" width="52" height="64" fill="#E7EEFB"/><rect x="1158" y="386" width="52" height="64" fill="#E7EEFB"/><rect x="1222" y="386" width="52" height="64" fill="#E7EEFB"/><rect x="1286" y="386" width="52" height="64" fill="#E7EEFB"/><rect x="1350" y="386" width="52" height="64" fill="#E7EEFB"/><rect x="1414" y="386" width="52" height="64" fill="#E7EEFB"/><rect x="1478" y="386" width="52" height="64" fill="#E7EEFB"/><rect x="1542" y="386" width="52" height="64" fill="#E7EEFB"/>
+    <rect x="1030" y="498" width="52" height="84" fill="#E7EEFB"/><rect x="1094" y="498" width="52" height="84" fill="#E7EEFB"/><rect x="1158" y="498" width="52" height="84" fill="#E7EEFB"/><rect x="1222" y="498" width="52" height="84" fill="#E7EEFB"/><rect x="1286" y="498" width="52" height="84" fill="#E7EEFB"/><rect x="1350" y="498" width="52" height="84" fill="#E7EEFB"/><rect x="1414" y="498" width="52" height="84" fill="#E7EEFB"/><rect x="1478" y="498" width="52" height="84" fill="#E7EEFB"/><rect x="1542" y="498" width="52" height="84" fill="#E7EEFB"/>
+    <rect x="1030" y="640" width="52" height="84" fill="#E7EEFB"/><rect x="1094" y="640" width="52" height="84" fill="#E7EEFB"/><rect x="1158" y="640" width="52" height="84" fill="#E7EEFB"/><rect x="1222" y="640" width="52" height="84" fill="#E7EEFB"/><rect x="1286" y="640" width="52" height="84" fill="#E7EEFB"/><rect x="1350" y="640" width="52" height="84" fill="#E7EEFB"/><rect x="1414" y="640" width="52" height="84" fill="#E7EEFB"/><rect x="1478" y="640" width="52" height="84" fill="#E7EEFB"/><rect x="1542" y="640" width="52" height="84" fill="#E7EEFB"/>
+    <rect x="1000" y="360" width="86" height="560" fill="#A7BEE6"/>
+    <rect x="1016" y="392" width="54" height="70" fill="#E7EEFB"/><rect x="1016" y="510" width="54" height="70" fill="#E7EEFB"/><rect x="1016" y="628" width="54" height="70" fill="#E7EEFB"/><rect x="1016" y="746" width="54" height="70" fill="#E7EEFB"/>
+  </g>
+  <!-- tiang/koridor tengah -->
+  <g opacity=".8">
+    <rect x="640" y="620" width="360" height="12" fill="#A7BEE6"/>
+    <rect x="660" y="632" width="14" height="280" fill="#A7BEE6"/><rect x="726" y="632" width="14" height="280" fill="#A7BEE6"/><rect x="792" y="632" width="14" height="280" fill="#A7BEE6"/><rect x="858" y="632" width="14" height="280" fill="#A7BEE6"/><rect x="924" y="632" width="14" height="280" fill="#A7BEE6"/><rect x="990" y="632" width="14" height="280" fill="#A7BEE6"/>
+  </g>
+  <!-- pepohonan -->
+  <g fill="#CEDCF3" opacity=".7">
+    <ellipse cx="740" cy="560" rx="110" ry="130"/><ellipse cx="860" cy="590" rx="90" ry="110"/>
+    <ellipse cx="560" cy="430" rx="80" ry="90" opacity=".8"/>
+    <ellipse cx="1180" cy="300" rx="130" ry="120" opacity=".9"/><ellipse cx="1330" cy="330" rx="100" ry="100" opacity=".8"/>
+    <ellipse cx="1500" cy="560" rx="130" ry="170" opacity=".9"/>
+    <ellipse cx="100" cy="400" rx="120" ry="110" opacity=".75"/>
+  </g>
+  <rect x="0" y="0" width="1600" height="900" fill="url(#kabut)"/>
+</svg>
